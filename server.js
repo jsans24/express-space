@@ -26,6 +26,9 @@ app.set('view engine', 'ejs')
 
 const missions = require('./models/marsMission')
 
+// Root Route
+app.get('/', (req, res) => {res.render('index')})
+
 // INDEX Route
 // send data to 'missions/index.ejs' view
 // the view should display just the names of each mission
