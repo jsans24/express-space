@@ -24,6 +24,8 @@ const port = 3000;
 
 app.set('view engine', 'ejs')
 
+app.use(express.static(__dirname + '/public'));
+
 const missions = require('./models/marsMission')
 
 // Root Route
