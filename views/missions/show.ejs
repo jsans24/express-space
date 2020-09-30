@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= mission.name %></title>
+</head>
+<body>
+    
+    <%- include('../nav') %>
+
+    <h1><%= mission.name %></h1>
+
+    <p><strong>Date:</strong> <%= mission.launchDate %></p>
+    <p><strong>Operator:</strong> <%= mission.operator %></p>
+    <p><strong>Type of Mission:</strong> <%= mission.missionType %></p>
+
+    <img src="<%= mission.img %>" alt="<%= mission.name %>">
+
+</body>
+</html>
